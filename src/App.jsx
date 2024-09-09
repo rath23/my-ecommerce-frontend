@@ -3,6 +3,7 @@ import Navbar from "./customer/componenst/navigation/Navbar"
 import HomePage from "./customer/componenst/pages/HomePage"
 import Product from "./customer/componenst/product/Product"
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import ProductDetail from "./customer/componenst/productDetailsFiles/ProductDetail";
 
 
 function App() {
@@ -12,7 +13,8 @@ function App() {
     <Router>
      <Navbar/>
     {/* <HomePage/> */}
-    <Product/>
+    {/* <Product/> */}
+    <ProductDetail/>
     <Footer/>
     </Router>
     </>
