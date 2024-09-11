@@ -6,8 +6,7 @@ import { Radio, RadioGroup } from "@headlessui/react";
 import { Box, Grid2, LinearProgress, Rating } from "@mui/material";
 import ProductReviewCard from "./ProductReviewCard";
 import HomeSectionCard from "../homeSectionCard/HomeSectionCard";
-import { mens_kurta } from '../../../Data/mens/mens_kurta'
-
+import { mens_kurta } from "../../../Data/mens/mens_kurta";
 
 const product = {
   name: "Basic Tee 6-Pack",
@@ -146,9 +145,15 @@ export default function ProductDetail() {
             {/* Options */}
             <div className="mt-4 lg:row-span-3 lg:mt-0">
               <h2 className="sr-only">Product information</h2>
-              <p className="text-3xl tracking-tight text-gray-900">
+              {/* <p className="text-3xl tracking-tight text-gray-900">
                 {product.price}
-              </p>
+              </p> */}
+
+              <div className="flex space-x-5 items-center text-lg lg:text-xl text-gray-900 mt-6">
+                <p className="font-semibold">$99</p>
+                <p className="opacity-50 line-through">$199</p>
+                <p className="text-green-600 font-semibold"> 50% off</p>
+              </div>
 
               {/* Reviews */}
               <div className="mt-6">
@@ -355,7 +360,11 @@ export default function ProductDetail() {
                           value={50}
                           className="col-span-8 "
                           color="success"
-                          sx={{ backgroundColor: '#d3d3d3' , borderRadius:4,height:7 }}
+                          sx={{
+                            backgroundColor: "#d3d3d3",
+                            borderRadius: 4,
+                            height: 7,
+                          }}
                         />
                       </div>
                     </div>
@@ -368,7 +377,11 @@ export default function ProductDetail() {
                           value={50}
                           className="col-span-8 "
                           color="success"
-                          sx={{ backgroundColor: '#d3d3d3' , borderRadius:4,height:7 }}
+                          sx={{
+                            backgroundColor: "#d3d3d3",
+                            borderRadius: 4,
+                            height: 7,
+                          }}
                         />
                       </div>
                     </div>
@@ -381,7 +394,11 @@ export default function ProductDetail() {
                           value={50}
                           className="col-span-8 "
                           color="info"
-                          sx={{ backgroundColor: '#d3d3d3' , borderRadius:4,height:7 }}
+                          sx={{
+                            backgroundColor: "#d3d3d3",
+                            borderRadius: 4,
+                            height: 7,
+                          }}
                         />
                       </div>
                     </div>
@@ -394,7 +411,11 @@ export default function ProductDetail() {
                           value={50}
                           className="col-span-8 "
                           color="warning"
-                          sx={{ backgroundColor: '#d3d3d3' , borderRadius:4,height:7 }}
+                          sx={{
+                            backgroundColor: "#d3d3d3",
+                            borderRadius: 4,
+                            height: 7,
+                          }}
                         />
                       </div>
                     </div>
@@ -407,11 +428,14 @@ export default function ProductDetail() {
                           value={50}
                           className="col-span-8 "
                           color="error"
-                          sx={{ backgroundColor: '#d3d3d3' , borderRadius:4,height:7 }}
+                          sx={{
+                            backgroundColor: "#d3d3d3",
+                            borderRadius: 4,
+                            height: 7,
+                          }}
                         />
                       </div>
                     </div>
-
                   </Box>
                 </div>
               </div>
@@ -420,13 +444,17 @@ export default function ProductDetail() {
         </section>
 
         <section className="pt-10">
-            <h1 className="text=xl font-bold">Related Products</h1>
-            <div className="flex flex-wrap gap-5 my-5">
-                {mens_kurta.slice(0,20).map((item,inx)=>(
-                    <HomeSectionCard key={inx} imageUrl={item.imageUrl} brand={item.brand} description={item.description}/>
-                ))}
-            </div>
-
+          <h1 className="text=xl font-bold">Related Products</h1>
+          <div className="flex flex-wrap gap-5 my-5">
+            {mens_kurta.slice(0, 20).map((item, inx) => (
+              <HomeSectionCard
+                key={inx}
+                imageUrl={item.imageUrl}
+                brand={item.brand}
+                description={item.description}
+              />
+            ))}
+          </div>
         </section>
       </div>
     </div>

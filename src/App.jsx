@@ -4,6 +4,8 @@ import HomePage from "./customer/componenst/pages/HomePage"
 import Product from "./customer/componenst/product/Product"
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import ProductDetail from "./customer/componenst/productDetailsFiles/ProductDetail";
+import CartPage from "./customer/componenst/cart/CartPage";
+import Checkout from "./customer/componenst/checkout/Checkout";
 
 
 function App() {
@@ -14,7 +16,9 @@ function App() {
      <Navbar/>
     {/* <HomePage/> */}
     {/* <Product/> */}
-    <ProductDetail/>
+    {/* <ProductDetail/> */}
+    {/* <CartPage/> */}
+    <Checkout/>
     <Footer/>
     </Router>
     </>
