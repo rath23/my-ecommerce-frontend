@@ -4,9 +4,9 @@ import React from "react";
 
 function Footer() {
   return (
-    <div className="bg-black h-[25rem] ">
+    <div className="bg-black h-[25rem] flex  flex-col justify-around ">
       <div
-        className="flex flex-row bg-black justify-around mb-[8.5rem]"
+        className="flex flex-row bg-black justify-around  flex-wrap gap-4 "
         style={{ fontFamily: "sans-serif" }}
       >
         <div className="flex flex-col items-center text-white text-center mt-5  ">
@@ -57,7 +57,7 @@ function Footer() {
           <a style={{ fontSize: "1rem" }}>Terms</a>
         </div>
       </div>
-      <div className="flex flex-col items-center text-white text-center bg-black mb-[5rem] pb-5 ">
+      <div className="flex flex-col items-center text-white text-center bg-black pt-10 ">
         <p>&copy; 2024 E-Store. All rights reserved.</p>
         <p>Made with love by Muneer</p>
       </div>

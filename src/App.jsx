@@ -6,6 +6,8 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import ProductDetail from "./customer/componenst/productDetailsFiles/ProductDetail";
 import CartPage from "./customer/componenst/cart/CartPage";
 import Checkout from "./customer/componenst/checkout/Checkout";
+import Order from "./customer/componenst/order/Order";
+import OrderDetails from "./customer/componenst/order/OrderDetails";
 
 
 function App() {
@@ -18,7 +20,9 @@ function App() {
     {/* <Product/> */}
     {/* <ProductDetail/> */}
     {/* <CartPage/> */}
-    <Checkout/>
+    {/* <Checkout/> */}
+    {/* <Order/> */}
+    <OrderDetails/>
     <Footer/>
     </Router>
     </>

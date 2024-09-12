@@ -7,7 +7,7 @@ function CartPage() {
         <div className='lg:col-span-2'>
        {[1,1,1,1].map((i,indx) => (<CartItem key={indx} />))} <CartItem/>
         </div>
-        <div className='lg:col-span-1 px-5 sticky top-0 h-[100vh] lg:mt-0'>
+        <div className='lg:col-span-1 px-5 sticky top-0 lg:mt-0'>
             <div className='border mt-3'>
                 <p className='uppercase font-bold opacity-60 py-2 px-2  '>Price Details</p>
                 <hr/>
